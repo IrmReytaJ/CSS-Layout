@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Flex Box</title>
+    <style>
+        .wadah_flex {
+            /* Menjadi flexibel dengan mengatur property display dengan nilai flex. */
+            display: flex;
+            background-color: blue;
+            flex-flow: nowrap;
+            justify-content: center;
+        }
+
+        .wadah_flex > div {
+            background-color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <!-- <div>18</div>
+        <div>19</div>
+        <div>20</div> -->
+    </div>
+    <!-- <p>Kesimpulan skenario 1 adalah : elemen-elemen anak di dalamnya div 1,2,3 akan secara otomatis diatur dalam satu baris secara horizontal secara default. </p> -->
+    <!-- <p>Kesimpulan skenario 2 adalah : setiap elemen div di dalam container .wadah_flex menampilkan latar belakang putih dgn margin 10px,padding 20px,dan ukuran font 30px,sedangkan container menampilkan latar belakang biru </p> -->
+    <!-- <p>Kesimpulan skenario 3 adalah : pada container .wadah_flex yang menampilkan 12 div (dengan properti flex-direction: row;) elemen-elemen anak di dalamnya akan diatur dalam satu kolom secara horizontal.</p> -->
+    <!-- <p>Kesimpulan skenario 5 adalah : flex-direction diatur ke column (elemen-elemen akan direnggangkan secara vertikal) dan flex-wrap diatur ke nowrap (elemen-elemen tidak akan dibungkus ke baris baru). </p> -->
+    <!-- <p>Kesimpulan skenario 3 adalah : pada container .wadah_flex yang menampilkan 12 div (dengan properti flex-direction: row;) elemen-elemen anak di dalamnya akan diatur dalam satu kolom secara horizontal.</p> -->
+    <p>Kesimpulan skenario 6 adalah : pada justify-content nilai space-evenly: Konten didistribusikan secara merata di sepanjang container, dengan jarak yang sama di antara konten, termasuk di sekitar konten di tepi container.</p>
+</html>

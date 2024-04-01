@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 50px;
+            background-color: #2196f3;
+            padding: 10px;
+            grid-template-columns: auto auto auto auto;
+        }
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            /* grid-column: 1/4; */
+        }
+        .item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .kesimpulan-container {
+            grid-column-start: 1;
+            grid-column-end: 5;
+            background-color: #2196f3;
+            color: black;
+            padding: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item1">2</div>
+        <div class="item1">3</div>
+        <div class="item1">4</div>
+        <div class="item1">5</div>
+        <div class="item1">6</div>
+        <div class="item1">7</div>
+        <div class="item1">8</div>
+        <div></div>
+        <div class="kesimpulan-container">
+            Kesimpulan:grid-template-columns: auto auto auto auto; dalam CSS Grid digunakan untuk menentukan jumlah dan lebar kolom dalam sebuah grid container memiliki beberapa kolom dengan lebar yang sama
+
+        </div>
+    </div>
+</body>
+</html>
